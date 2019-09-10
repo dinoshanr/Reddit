@@ -14,9 +14,6 @@ function postData(event) {
                 email: email.value,
                 password: password.value,
                 username: username.value
-                // email: "xfasdgfsdfdgsdfgtre@x.com",
-                // password: "xpassword",
-                // username: "x dfge5tfdsfdergertgfvc"
             })
     })
     .then((res) => {
