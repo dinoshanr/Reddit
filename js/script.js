@@ -2,9 +2,9 @@
 function postData(event) {
     event.preventDefault();
     const email = document.querySelector('.email');
-    const password = document.querySelector('.password');
+    const password = document.querySelector('.pw');
     const username = document.querySelector('.username');
-​
+    console.log(email.value, password.value, username.value)
     fetch('http://thesi.generalassemb.ly:8080/signup', {
             method: 'POST',
             headers: {
@@ -14,24 +14,28 @@ function postData(event) {
                 email: email.value,
                 password: password.value,
                 username: username.value
+                // email: "xfasdgfsdfdgsdfgtre@x.com",
+                // password: "xpassword",
+                // username: "x dfge5tfdsfdergertgfvc"
             })
     })
     .then((res) => {
+      //console.log(res)
         return res.json();
     })
     .then((res) => {
+      console.log(res)
         localStorage.setItem('user', res.token);
-        createPost();
+        // createPost();
     })
     .catch((err) => {
         console.log(err);
     })
 }
-​
+//
 // function updateDom() {
 //     document.querySelector('.signupForm').style.display = "none";
 //     document.querySelector('.postForm').style.display = "block";
-// ​
 //     fetch("http://thesi.generalassemb.ly:8080/user/post", {
 //         headers: {
 //             "Authorization": "Bearer " + localStorage.getItem('user')
@@ -42,7 +46,6 @@ function postData(event) {
 //     })
 //     .then((res) => {
 //         const list = document.querySelector('.posts');
-// ​
 //         for (let i = 0; i < res.length; i++) {
 //             const item = document.createElement('li');
 //             const title = document.createElement('h3');
