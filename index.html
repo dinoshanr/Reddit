@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,43 +14,32 @@
   <nav class="navbar">
     <a class="navbar-brand">Reddit</a>
     <form class="form-inline">
-      <div class="">
-
-      </div>
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button id="search" type="submit">Search</button>
-  <button type="button" id="login">LOG IN</button>
-  <button type="button" id="signup">SIGN UP</button>
-</div>
+      <button class="btn btn-secondary" id="search" type="submit">Search</button>
+      <div class="button" role="group" aria-label="Basic example">
+        <button type="button" id="login" class="btn btn-secondary">LOG IN</button>
+        <button type="button" id="signup" class="btn btn-secondary">SIGN UP</button>
+      </div>
     </form>
   </nav>
-  <br><br>
+  <br>
+  <button type="button" id="createpost" class="btn btn-primary btn-lg btn-block">Create a Post!</button>
+  <br>
+  <br>
 
   <div class="card" style="width: 40rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Article Title</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+      <a href="#" id="comment" class="btn-btn-primary">Comment</a>
+      <a href="#" id="delete" class="btn-btn-primary">Delete</a>
+
+    </div>
   </div>
-</div>
-<div class="card" style="width: 40rem;">
-<img src="..." class="card-img-top" alt="...">
-<div class="card-body">
-  <h5 class="card-title">Card title</h5>
-  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  <a href="#" class="btn btn-primary">Go somewhere</a>
-</div>
-</div>
-<div class="card" style="width: 40rem;">
-<img src="..." class="card-img-top" alt="...">
-<div class="card-body">
-  <h5 class="card-title">Card title</h5>
-  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  <a href="#" class="btn btn-primary">Go somewhere</a>
-</div>
-</div>
-        <script src="js/script.js"></script>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
