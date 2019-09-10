@@ -18,24 +18,25 @@
 
       <!-- nav bar login items -->
       <form>
-        <input type="text" id="login" name="login" placeholder="username"><br>
-        <input type="text" id="password" name="login" placeholder="password"><br>
-        <input type="submit" value="Log In">
+        <input type="text" class="login" placeholder="login"><br>
+        <input type="text" class="password" placeholder="password"><br>
+        <input type="submit">
       </form>
-
   </nav>
   <br>
+
+
   <!-- signup form -->
-  <form>
-    <input type="text" id="login" name="login" placeholder="login"><br>
-    <input type="text" id="password" name="login" placeholder="password"><br>
-    <input type="submit" value="Log In">
+  <form onSubmit="postData(event)" class="signupForm">
+    <input type="text" class="email" placeholder="email"><br>
+    <input type="text" class="username" placeholder="username"><br>
+    <input type="text" class="password" placeholder="password"><br>
+    <input type="submit" value="Sign Up">
   </form>
 
 
-
   <br>
-  <button type="button" id="createpost" class="btn btn-primary btn-lg btn-block">Create a Post!</button>
+  <button type="button" class="createpost" class="btn btn-primary btn-lg btn-block">Create a Post!</button>
   <br>
   <br>
 
