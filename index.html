@@ -36,23 +36,23 @@
 
 
   <br>
-  <input type="text" class="title" placeholder="title"
-            />
-            <input
-                type="text"
-                class="description"
-                placeholder="description"
-            />
-  <button type="button" class="createpost" class="btn btn-primary btn-lg btn-block">Create a Post!</button>
-  <br>
-  <br>
+<form onSubmit = "createPost(event)" class="postForm"  >
+  <input type="text" class="title" placeholder="title" />
+  <input type="text" class="description" placeholder="description" />
+  <button type="submit" class="createpost" class="btn btn-primary btn-lg btn-block">Create a Post!</button>
+</form>
+
+<!-- <ul class="posts"></ul> -->
+  <!-- <br>
+  <br> -->
 
 
 
   <div class="card" style="width: 40rem;">
     <div class="card-body">
-      <h5 class="card-title">Article Title</h5>
-      <p class="card-text">Test Content</p>
+      <ul class="posts"></ul>
+      <!-- <h5 class="card-title">Article Title</h5>
+      <p class="card-text">Test Content</p> -->
       <a href="#" id="comment" class="btn-btn-primary">Comment</a>
       <a href="#" id="delete" class="btn-btn-primary">Delete</a>
 
