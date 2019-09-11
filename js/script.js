@@ -81,3 +81,33 @@ function createPost(event) {
         console.log(err);
     })
 }
+
+function displayAll(event){
+  const allPosts = document.querySelector(".postForm");
+  fetch("http://thesi.generalassemb.ly:8080/post/list", {
+    method: "GET",
+    headers: {
+      "Content-Type":"  application/json"
+    },
+  })
+  .then(res => {
+    return res.json();
+  })
+  .then(res => {
+      console.log(res);
+  const list = document.querySelector(".posts");
+      for (let i = 0; i < res.length; i++) {
+        if (i <= 10) {
+          const item = document.createElement("li");
+          const title = document.createElement("h3");
+          const description = document.createElement("p");
+          item.appendChild(title);
+          item.appendChild(description);
+          title.innerText = res[i].title;
+          description.innerText = res[i].description;
+          list.appendChild(item);
+        }
+      }
+    })
+  };
+displayAll();
