@@ -4,8 +4,10 @@ body {
 
 nav {
   background-color: #C8B9FE;
+  margin-bottom: 10px;
 }
 
+.form-inline {}
 
 .createpost {
   color: black;
@@ -17,6 +19,10 @@ nav {
   background-color: #11A6CD;
 }
 
+.navbar {
+  /* margin: 10px; */
+}
+
 .navbar-brand {
   margin: 10px;
 }
@@ -25,10 +31,13 @@ nav {
   margin: 30px;
   background-color: #C8B9FE;
   text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .postForm {
   text-align: center;
+}
 }
 
 .signupForm {
@@ -37,12 +46,10 @@ nav {
 
 .email {
   margin: 2px;
-
 }
 
 .pw {
   margin: 2px;
-
 }
 
 .username {
@@ -50,10 +57,57 @@ nav {
 }
 
 #delete {
-color: red;
-padding:10px;
+  color: red;
+  padding: 10px;
 }
 
 #comment {
   color: red;
 }
+
+/* dropdown bar*/
+.dropbtn {
+  background-color: #11A6CD;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/*  */

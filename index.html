@@ -16,13 +16,24 @@
     <a class="navbar-brand"><strong>Reddit</strong></a>
     <form class="form-inline">
       <!-- nav bar login items -->
-      <form>
-        <input type="text" class="login" placeholder="login"><br>
-        <input type="text" class="password" placeholder="password"><br>
-        <input id="loginsubmit" type="submit">
-      </form>
+      <input type="text" class="login" placeholder="login"><br>
+      <input type="text" class="password" placeholder="password"><br>
+      <input id="loginsubmit" type="submit">
+    </form>
+
+
+    <!-- dropdown bar -->
+    <div class="dropdown" style="float:right;">
+      <button class="dropbtn"><strong>USER</strong></button>
+      <div class="dropdown-content">
+        <a href="#">Update Profile</a>
+        <a href="#">Log Out</a>
+      </div>
+    </div>
+    <!-- dropdown bar -->
+
+
   </nav>
-  <br>
 
 
   <!-- signup form -->
@@ -33,7 +44,9 @@
     <input type="text" class="username" placeholder="username"><br>
     <input type="submit" value="Sign Up">
   </form>
+
   <br>
+
   <form onSubmit="createPost(event)" class="postForm">
     <input type="text" class="title" placeholder="title" />
     <input type="text" class="description" placeholder="description" />
@@ -44,22 +57,21 @@
   <!-- <br>
   <br> -->
 
-<div></<div>
+  <div>
+    </<div>
 
-  <div class="card">
-    <div class="card-body">
-      <p class="posts"></p>
-      <!-- <h5 class="card-title">Article Title</h5>
+    <div class="card">
+      <div class="card-body">
+        <p class="posts"></p>
+        <!-- <h5 class="card-title">Article Title</h5>
       <p class="card-text">Test Content</p> -->
-      <a href="#" id="comment" class="btn-btn-primary">Comment</a>
-      <a href="#" id="delete" class="btn-btn-primary">Delete</a>
+        <a href="#" id="comment" class="btn-btn-primary">Comment</a>
+        <a href="#" id="delete" class="btn-btn-primary">Delete</a>
 
+      </div>
     </div>
-  </div>
 
-
-
-  <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
