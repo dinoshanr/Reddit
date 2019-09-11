@@ -44,7 +44,7 @@ function updateDom() {
     .then((res) => {
         const list = document.querySelector('.posts');
         for (let i = 0; i < res.length; i++) {
-            const item = document.createElement('li');
+            const item = document.createElement('p');
             const title = document.createElement('h3');
             const description = document.createElement('p');
             item.appendChild(title);

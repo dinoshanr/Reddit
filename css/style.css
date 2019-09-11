@@ -12,7 +12,43 @@ nav {
   background-color: #C8B9FE;
 }
 
+#loginsubmit {
+  color: black;
+  background-color: #11A6CD;
+}
+
+.navbar-brand {
+  margin: 10px;
+}
 
 .card {
+  margin: 30px;
   background-color: #C8B9FE;
+  text-align: center;
+}
+
+.postForm {
+  text-align: center;
+}
+
+.signupForm {
+  margin-left: 20px;
+}
+
+.email {
+  margin: 2px;
+
+}
+
+.pw {
+  margin: 2px;
+
+}
+
+.username {
+  margin: 2px;
+}
+
+#comment {
+  padding: 10px;
 }

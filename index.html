@@ -13,13 +13,13 @@
 <body>
 
   <nav class="navbar">
-    <a class="navbar-brand">Reddit</a>
+    <a class="navbar-brand"><strong>Reddit</strong></a>
     <form class="form-inline">
       <!-- nav bar login items -->
       <form>
         <input type="text" class="login" placeholder="login"><br>
         <input type="text" class="password" placeholder="password"><br>
-        <input type="submit">
+        <input id="loginsubmit" type="submit">
       </form>
   </nav>
   <br>
@@ -33,10 +33,8 @@
     <input type="text" class="username" placeholder="username"><br>
     <input type="submit" value="Sign Up">
   </form>
-
-
   <br>
-<form onSubmit = "createPost(event)" class="postForm"  >
+<form onSubmit = "createPost(event)" class="postForm">
   <input type="text" class="title" placeholder="title" />
   <input type="text" class="description" placeholder="description" />
   <button type="submit" class="createpost">Create a Post!</button>
@@ -48,9 +46,9 @@
 
 
 
-  <div class="card" style="width: 40rem;">
+  <div class="card" style="width: 85rem;">
     <div class="card-body">
-      <ul class="posts"></ul>
+      <p class="posts"></p>
       <!-- <h5 class="card-title">Article Title</h5>
       <p class="card-text">Test Content</p> -->
       <a href="#" id="comment" class="btn-btn-primary">Comment</a>
