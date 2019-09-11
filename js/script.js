@@ -111,3 +111,15 @@ function displayAll(event) {
     })
 };
 displayAll();
+
+function updateProfile(event){
+  event.preventDefault()
+}
+
+function updateProfile(event){
+  event.preventDefault()
+}
+
+function updateProfile(event){
+  event.preventDefault()
+}
