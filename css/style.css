@@ -49,6 +49,11 @@ nav {
   margin: 2px;
 }
 
+#delete {
+color: red;
+padding:10px;
+}
+
 #comment {
-  padding: 10px;
+  color: red;
 }
