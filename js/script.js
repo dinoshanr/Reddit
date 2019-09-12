@@ -126,9 +126,36 @@ btn.onclick = function() {
 span.onclick = function() {
   modal.style.display = "none";
 }
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
+
+function userProfile(event){
+  event.preventDefault();
+  const adEmail = document.querySelector('.adEmail');
+  const mobile = document.querySelector('.mobile');
+  const address = document.querySelector('.address');
+  console.log(adEmail.value, mobile.value,address.value);
+  fetch('http://thesi.generalassemb.ly:8080/profile',{
+    method:'POST',
+    headers: {
+      'Authorization': "Bearer " + localStorage.getItem('user'),
+      'Content-Type':'application/json'
+    },
+    body: JSON.stringify({
+      additionalEmail: adEmail.value,
+      mobile: mobile.value,
+      address: address.valiue
+    })
+  })
+  .then((res) => {
+    console.log(res);
+    updateDom(res);
+  })
+  .catch((err) => {
+    console.log(err);
+  })
 }

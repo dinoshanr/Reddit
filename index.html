@@ -29,9 +29,14 @@
       <!-- Modal content -->
       <div class="modal-content">
         <span class="close">&times;</span>
-        <p>Please update the user's mobile number</p>
-        <input type="text" class="mobile" placeholder="mobile">
-        <input id="loginsubmit" type="submit">
+        <p>Please Update User Fields</p>
+        <form onSubmit="userProfile(event)" class="userForm">
+          <input type="text" class="adEmail" placeholder="additional email">
+          <input type="tel" class="mobile" patten="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12"placeholder="mobile" required/>
+          <span>000-000-0000</span>
+          <input type="text" class="address" placeholder="address">
+          <input id="usersubmit" type="submit">
+        </form>
       </div>
 
     </div>
