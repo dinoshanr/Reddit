@@ -52,8 +52,9 @@ function userLogin(event) {
       localStorage.setItem('user', res.token);
       // if(res.httpStatus !== 'BAD_REQUEST')
       if (localStorage.getItem("user") !== "undefined") {
-        console.log('logged in')
-
+        alert("Welcome to Reddit!")
+      }else{
+        alert("Email and Password is invalid, please try again")
       }
   //      window.location.href = "index.html";
   //     }else{
