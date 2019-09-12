@@ -11,9 +11,24 @@ nav {
 .signup {
    background-color: #C8B9FE;
 }
+<<<<<<< HEAD
 .createpost {
  color: black;
  background-color: #C8B9FE;
+=======
+
+#myBtn{
+  background-color: #11A6CD;
+}
+
+.signup {
+    background-color: #C8B9FE;
+}
+
+.createpost {
+  color: black;
+  background-color: #C8B9FE;
+>>>>>>> 0500d3cb934c420e1960521df72110e04bfef7ef
 }
 #loginsubmit {
  color: black;

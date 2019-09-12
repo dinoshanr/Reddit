@@ -9,6 +9,7 @@
  <title>Reddit</title>
 </head>
 <body>
+<<<<<<< HEAD
  <nav class="navbar">
    <a class="navbar-brand"><strong>Reddit</strong></a>
    <form class="form-inline">
@@ -67,5 +68,80 @@
      </div>
    </div>
    <script src="js/script.js"></script>
+=======
+
+  <nav class="navbar">
+    <a class="navbar-brand"><strong>Reddit</strong></a>
+    <form class="form-inline">
+      <!-- nav bar login items -->
+      <input type="text" class="login" placeholder="login"><br>
+      <input type="text" class="password" placeholder="password"><br>
+      <input id="loginsubmit" type="submit">
+    </form>
+
+    <button id="myBtn">Update User</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Please update the user's mobile number</p>
+        <input type="text" class="mobile" placeholder="mobile">
+        <input id="loginsubmit" type="submit">
+      </div>
+
+    </div>
+
+    <!-- dropdown bar -->
+    <!-- <div class="dropdown" style="float:right;">
+      <button id="dropbtn"><strong>USER</strong></button> -->
+      <!-- <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <input type="text" class="mobileUpdate" placeholder="mobile"><br>
+          <input id="mobile" type="submit">
+        </div> -->
+
+      <!-- <div class="dropdown-content">
+        <a href="#">Update Profile</a>
+        <a href="#">Log Out</a>
+      </div>
+    </div> -->
+    <!-- dropdown bar -->
+
+  </nav>
+
+  <!-- signup form -->
+  <form onSubmit="postData(event)" class="signupForm">
+    <input type="text" class="email" placeholder="email" /><br>
+
+    <input type="password" class="pw" placeholder="password" /><br>
+    <input type="text" class="username" placeholder="username"><br>
+    <input type="submit" class="signup" value="Sign Up">
+  </form>
+
+  <br>
+
+  <form onSubmit="createPost(event)" class="postForm">
+    <input type="text" class="title" placeholder="title" />
+    <input type="text" class="description" placeholder="description" />
+    <button type="submit" class="createpost">Create a Post!</button>
+  </form>
+
+  <div>
+    </<div>
+
+    <div class="card">
+      <div class="card-body">
+        <p class="posts"></p>
+        <a href="#" id="comment" class="btn-btn-primary">Comment</a>
+        <a href="#" id="delete" class="btn-btn-primary">Delete</a>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+>>>>>>> 0500d3cb934c420e1960521df72110e04bfef7ef
 </body>
 </html>
