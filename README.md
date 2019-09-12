@@ -4,7 +4,7 @@ Our Reddit project was built using HTML5, CSS, JS and Bootstrap 4. Bootstrap is 
 For the approach we sat down and drew out the layout for our page. We discussed on how we were going to have the websites components slayed out.
 
 
-Unsolved problems can be written after
+Unsolved problems can be written after we complete the project
 
 
 For planning documentation take pictures of the notes and notebook
