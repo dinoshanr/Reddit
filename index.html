@@ -16,8 +16,8 @@
     <a class="navbar-brand"><strong>Reddit</strong></a>
     <form class="form-inline">
       <!-- nav bar login items -->
-      <input type="text" class="login" placeholder="login"><br>
-      <input type="text" class="password" placeholder="password"><br>
+      <input type="text" class="login" placeholder="login" required/><br>
+      <input type="text" class="password" placeholder="password" required/><br>
       <input id="loginsubmit" type="submit">
     </form>
 
@@ -57,10 +57,10 @@
 
   <!-- signup form -->
   <form onSubmit="postData(event)" class="signupForm">
-    <input type="text" class="email" placeholder="email" /><br>
+    <input type="text" class="email" placeholder="email" required/><br>
 
-    <input type="password" class="pw" placeholder="password" /><br>
-    <input type="text" class="username" placeholder="username"><br>
+    <input type="password" class="pw" placeholder="password" required/><br>
+    <input type="text" class="username" placeholder="username" required/><br>
     <input type="submit" class="signup" value="Sign Up">
   </form>
 
