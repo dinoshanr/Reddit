@@ -7,8 +7,22 @@ nav {
   margin-bottom: 10px;
 }
 
+.ademail {
+  margin: 10px;
+}
+
+
+.modal-content {
+  width: 50%;
+}
+
 #myBtn{
   background-color: #11A6CD;
+}
+
+#usersubmit {
+  background-color: #11A6CD;
+  margin: 10px;
 }
 
 .signup {
