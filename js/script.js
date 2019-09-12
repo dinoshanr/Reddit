@@ -29,6 +29,42 @@ function postData(event) {
     })
 }
 
+function userLogin(event) {
+  event.preventDefault();
+  const emailUser = document.querySelector('.login');
+  const passwordUser = document.querySelector('.password');
+  console.log(emailUser.value, passwordUser.value)
+  fetch('http://thesi.generalassemb.ly:8080/login', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+              email: emailUser.value,
+              password: passwordUser.value,
+          })
+  })
+  .then((res) => {
+     return res.json();
+  })
+  .then((res) => {
+    console.log(res)
+      localStorage.setItem('user', res.token);
+      // if(res.httpStatus !== 'BAD_REQUEST')
+      if (localStorage.getItem("user") !== "undefined") {
+        console.log('logged in')
+
+      }
+  //      window.location.href = "index.html";
+  //     }else{
+  //      localStorage.clear();
+  //     }
+  })
+  .catch((err) => {
+      console.log(err);
+  })
+}
+
 function updateDom() {
   document.querySelector('.signupForm').style.display = "none";
   document.querySelector('.postForm').style.display = "block";
@@ -159,3 +195,15 @@ function userProfile(event){
     console.log(err);
   })
 }
+
+
+
+// function getUser(event){
+//   event.preventDefault();
+//   fetch('http://thesi.generalassemb.ly:8080/profile',{
+//   method: 'GET',
+//   header: {
+//     'Authorization': "Bearer " + localStorage.getItem('user'),
+//     'Content-Type':'application/json'
+//   },
+//   .then

@@ -14,7 +14,7 @@
 
   <nav class="navbar">
     <a class="navbar-brand"><strong>Reddit</strong></a>
-    <form class="form-inline">
+    <form onSubmit="userLogin(event)" class="form-inline">
       <!-- nav bar login items -->
       <input type="text" class="login" placeholder="login" required/><br>
       <input type="text" class="password" placeholder="password" required/><br>
@@ -31,16 +31,32 @@
         <span class="close">&times;</span>
         <p>Please Update User Fields</p>
         <form onSubmit="userProfile(event)" class="userForm">
-          <input type="text" class="adEmail" placeholder="additional email" required>
-          <input type="tel" class="mobile" patten="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12"placeholder="mobile" required/>
-          <span>(000)-000-0000</span>
+          <input type="text" class="adEmail" placeholder="additional email">
+          <input type="tel" class="mobile" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12"placeholder="mobile" required/>
+          <span>000-000-0000</span>
           <input type="text" class="address" placeholder="address">
           <input id="usersubmit" type="submit">
         </form>
       </div>
 
-
     </div>
+
+    <!-- dropdown bar -->
+    <!-- <div class="dropdown" style="float:right;">
+      <button id="dropbtn"><strong>USER</strong></button> -->
+      <!-- <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <input type="text" class="mobileUpdate" placeholder="mobile"><br>
+          <input id="mobile" type="submit">
+        </div> -->
+
+      <!-- <div class="dropdown-content">
+        <a href="#">Update Profile</a>
+        <a href="#">Log Out</a>
+      </div>
+    </div> -->
+    <!-- dropdown bar -->
 
   </nav>
 
@@ -56,15 +72,14 @@
   <br>
 
   <form onSubmit="createPost(event)" class="postForm">
-    <input type="text" class="title" placeholder="title" required/>
-    <input type="text" class="description" placeholder="description" required/>
+    <input type="text" class="title" placeholder="title" />
+    <input type="text" class="description" placeholder="description" />
     <button type="submit" class="createpost">Create a Post!</button>
   </form>
 
   <div>
     </<div>
 
-<!-- card -->
     <div class="card">
       <div class="card-body">
         <p class="posts"></p>
@@ -72,11 +87,6 @@
         <a href="#" id="delete" class="btn-btn-primary">Delete</a>
       </div>
     </div>
-
-<!-- card -->
-<!-- end
- -->
-
 
     <script src="js/script.js"></script>
 </body>
