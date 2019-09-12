@@ -7,11 +7,17 @@ nav {
   margin-bottom: 10px;
 }
 
-.form-inline {}
+#myBtn{
+  background-color: #11A6CD;
+}
+
+.signup {
+    background-color: #C8B9FE;
+}
 
 .createpost {
   color: black;
-  /* background-color: #C8B9FE; */
+  background-color: #C8B9FE;
 }
 
 #loginsubmit {
