@@ -53,6 +53,7 @@ function userLogin(event) {
       // if(res.httpStatus !== 'BAD_REQUEST')
       if (localStorage.getItem("user") !== "undefined") {
         alert("Welcome to Reddit!")
+        document.querySelector(".form-inline").style.display = "none";
       }else{
         alert("Email and Password is invalid, please try again")
       }
@@ -134,7 +135,7 @@ function displayAll(event) {
       console.log(res);
       const list = document.querySelector(".posts");
       for (let i = 0; i < res.length; i++) {
-        if (i <= 10) {
+        // if (i <= 10) {
           const item = document.createElement("p");
           const title = document.createElement("h3");
           const description = document.createElement("p");
@@ -143,13 +144,12 @@ function displayAll(event) {
           title.innerText = res[i].title;
           description.innerText = res[i].description;
           list.appendChild(item);
-        }
+        // }
       }
     })
 };
 displayAll();
 
-// Get the modal
 let modal = document.getElementById("myModal");
 // Get the button that opens the modal
 let btn = document.getElementById("myBtn");
