@@ -154,4 +154,164 @@ nav {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}body {
+  background-color: #11A6CD;
 }
+
+nav {
+  background-color: #C8B9FE;
+  margin-bottom: 10px;
+}
+
+#myBtn{
+  background-color: #11A6CD;
+}
+
+.signup {
+    background-color: #C8B9FE;
+}
+
+.createpost {
+  color: black;
+  background-color: #C8B9FE;
+}
+
+#loginsubmit {
+  color: black;
+  background-color: #11A6CD;
+}
+
+.navbar {
+  /* margin: 10px; */
+}
+
+.navbar-brand {
+  margin: 10px;
+}
+
+.card {
+  margin: 30px;
+  background-color: #C8B9FE;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.postForm {
+  text-align: center;
+}
+}
+
+.signupForm {
+  margin-left: 20px;
+}
+
+.email {
+  margin: 2px;
+}
+
+.pw {
+  margin: 2px;
+}
+
+.username {
+  margin: 2px;
+}
+
+#delete {
+  color: red;
+  padding: 10px;
+}
+
+#comment {
+  color: red;
+}
+
+/* dropdown bar*/
+.dropbtn {
+  background-color: #11A6CD;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/*  */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #C8B9FE;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+/* comment box */
