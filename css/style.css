@@ -152,3 +152,12 @@ nav {
   text-decoration: none;
   cursor: pointer;
 }
+.postStyle{
+  display:flex;
+  justify-content:
+  text-align: center;
+  background-color: #C8B9FE;
+  width: 70vw;
+  list-style: none;
+  margin: 5vw 15vw 0 15vw;
+}

@@ -133,10 +133,11 @@ function displayAll(event) {
     })
     .then(res => {
       console.log(res);
-      const list = document.querySelector(".posts");
-      for (let i = 0; i < res.length; i++) {
+      const list = document.querySelector(".thePosts");
+      for (let i = 0; i < 100; i++) {
         // if (i <= 10) {
-          const item = document.createElement("p");
+          const item = document.createElement("li");
+          item.id = res[i].id;
           const title = document.createElement("h3");
           const description = document.createElement("p");
           item.appendChild(title);
@@ -144,12 +145,40 @@ function displayAll(event) {
           title.innerText = res[i].title;
           description.innerText = res[i].description;
           list.appendChild(item);
+          allComments(res[i].id);
         // }
-        
+
       }
     })
 };
 displayAll();
+
+function allComments(postId) {
+  fetch(`http://thesi.generalassemb.ly:8080/post/${postId}/comment`, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json"
+    }
+  })
+    .then(res => {
+      return res.json();
+    })
+    .then(res => {
+      const post = document.getElementById(`${postId}`);
+      const list = document.createElement("ul");
+      post.appendChild(list);
+      for (let i = 0; i < res.length; ++i) {
+        const item = document.createElement("li");
+        const text = document.createElement("p");
+        item.appendChild(text);
+        text.innerText = res[i].text;
+        list.appendChild(item);
+      }
+    })
+    .catch(err => {
+      console.log(err);
+    });
+}
 
 let modal = document.getElementById("myModal");
 // Get the button that opens the modal
