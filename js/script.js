@@ -145,6 +145,7 @@ function displayAll(event) {
           description.innerText = res[i].description;
           list.appendChild(item);
         // }
+        
       }
     })
 };
